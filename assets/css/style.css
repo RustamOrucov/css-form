@@ -89,6 +89,9 @@ body {
 .input-area {
     position: relative;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    
 }
 .input-area span{
     font-size: 10px;
