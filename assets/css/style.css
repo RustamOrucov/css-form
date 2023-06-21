@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 200px;
+  gap: 50px;
+}
+/* ========Section one================ */
+.form-text-content{
+    color: white;
+    width: 540px;
+}
+.form-text-content h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.form-text-content p{
+    text-align: justify;
+    font-size: 14px;
+}
+/*================Section two===================== */
+.form-content{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+}
+.btn{
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px  hsl(249, 10%, 26%,0.3);
+    cursor: pointer;
+}
+.try.btn{
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    font-weight: bold;
+}
+.try.btn:hover{
+    background-color:hsl(246, 25%, 77%) ;
+    color: black;
+    transition: .5s;
+}
+.try.btn span{
+    font-weight: 100;
+}
+.form-wrapper{
+    padding:  20px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px  hsla(247, 8%, 43%, 0.3);
+}
+.form-wrapper input{
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.form-wrapper input::placeholder{
+    color: rgb(126, 126, 126);
+    font-weight: 500;
+}
+.form-wrapper .fa-solid{
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    background-color:hsl(0, 100%, 74%) ;
+}
+.input-area {
+    position: relative;
+    text-align: right;
+}
+.input-area span{
+    font-size: 10px;
+    color:  hsl(0, 100%, 74%);
+}
+.rank{
+    width: 30px;
+    height: 30px;
+    
+    background-color: hsl(0, 100%, 74%) ;
+}
+.claim.btn{
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.claim.btn:hover{
+    transition: .4s;
+    transform: scale(1.03);
+}
+.form-text{
+    margin-top: 10px;
+    font-size: 8px;
+    text-align: center;
+    color: rgb(176, 176, 176);
+}
+.form-text a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+/* =============== Vsibility hidden ========================= */
+.hide{
+    visibility: hidden;
+}
+
+/* ==================Media Queries==================== */
+@media only screen and (max-width: 600px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-text-content{
+        text-align: center;
+       margin-top: 80px;
+        width: 300px;
+    }
+    .form-text-content h1{
+        line-height: 24px;
+        font-size: large;
+    }
+    .form-text-content p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .form-content{
+        width: 300px;
+    }
+    .form-content input{
+        width: 260px;
+    }
+    .try.btn{
+        padding:20px;
+        padding-bottom: 50px;
+    }
+    .form-text{
+        width: 200px;
+        margin-left: 30px;
+    }
+}
